@@ -1,23 +1,22 @@
 <html ng-app="myApp">
-	<head>
-		<script type="text/JavaScript" src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-		<script type="text/JavaScript" src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.js"></script>
-		<script type="text/JavaScript" src ="/js/controllers/clientController.js"></script>
-		</head>
+    <head>
+        <script type="text/JavaScript" src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script type="text/JavaScript" src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.js"></script>
+        <script type="text/JavaScript" src ="/js/controllers/clientController.js"></script>
+        </head>
 
-	<body>
-		<div ng-controller="testcontroller">
-			Number of Claims : {{claimants.length}}
-			<ul>
-				<li ng-repeat="claimant in claimants ">
-					{{claimant.name}}
-				</li>
-			</ul>
-			<form ng-submit="addClaimantName()">
-			<input type="text" placeholder="Enter a String here to display" ng-model="ClaimantName"></input>
-			<input type="submit" placeholder="Enter a String here to display" ></input>
-			</form>
-		</div>
-
-	</body>
+    <body>
+        <div ng-controller="testcontroller">
+            Number of Claims : {{claimants.length}}
+            <ul>
+                <li ng-repeat="claimant in claimants ">
+                    {{claimant.name}}
+                </li>
+            </ul>
+            <form ng-submit="addClaimantName()">
+            <input type="text" placeholder="Enter a String here to display" ng-model="ClaimantName"></input>
+            <input type="submit" placeholder="Enter a String here to display" ></input>
+            </form>
+        </div>
+    </body>
 </html>
