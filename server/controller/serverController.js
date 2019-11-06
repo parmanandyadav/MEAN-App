@@ -6,6 +6,7 @@ module.exports.create = function(req, res){
         res.json(result);
     });
 }
+//some random text
 
 module.exports.fetch = function(req, res){
     Claims.find({}, function(err, result){
